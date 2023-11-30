@@ -51,7 +51,7 @@ const mailOptions={
     from:"amazon.com",
     to:email,
     subject:"Email verification",
-    text:`please click the following link to verify your email :http://192.168.43.242:8000/verify/${verificationToken}`
+    text:`please click the following link to verify your email :https://kinzel.onrender.com/verify/${verificationToken}`
 };
 try{
 await transporter.sendMail(mailOptions);
